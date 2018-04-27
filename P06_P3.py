@@ -1,8 +1,12 @@
-x = int(input("Km 1er día?"))
-y = int(input("Longitud carrera?"))
-d = 0
-while y >= x:
-  d = d + 1
-  x = x + x * 0.1
-  
-print(d)
+suma= 0
+contador= -1  #-1 debido a que no se cuenta el numero 0
+while True:
+  numero = int(input("Num?"))
+  contador = contador + 1 
+  suma= suma + numero
+  if numero==0:
+    break
+print(contador)
+print(suma)
+
+
